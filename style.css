@@ -233,22 +233,24 @@ HEADER / ABOUT US ↓
 .row__header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     flex-wrap: nowrap;
-    gap: 70px;
+    gap: 100px;
 }
 
 .container__header {
+    display: block;
     flex: 40%;
     flex-direction: column;
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
     max-width: 1200px;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    padding: 0 32px;
 }
 
 .header__description {
@@ -349,12 +351,13 @@ HEADER / ABOUT US ↓
 .header__img--wrapper {
     display: flex;
     padding-top: 20px;
-    width: 80%;
+    width: 100%;
     max-width: 750px;
     align-items: flex-start;
     justify-content: left;
     flex-shrink: 1;
     flex-basis: 60%;
+    margin: 16px 0;
 }
 
 /* 
@@ -472,7 +475,7 @@ QUALITY WORK ↓
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -493,11 +496,13 @@ QUALITY WORK ↓
     display: flex;
     flex-direction: column;
     margin: 0;
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
-    padding-bottom: 80px;
+    padding: 0px 0px 80px;
+    box-sizing: border-box;
 }
 
 .quality__section--tag {
@@ -577,9 +582,14 @@ STEPS ↓
 
 */
 
+#steps {
+    display: flex;
+    justify-content: center;
+    }
+
 .container__steps {
-    flex: 1;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     margin: 0;
     width: 100%;
     max-width: none;
@@ -590,29 +600,26 @@ STEPS ↓
 
 .row__steps {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     max-width: 1200px;
-    gap: 80px;
+    gap: 120px;
     margin-left: 0;
 }
-
+    
 .steps__img--wrapper {
     display: flex;
-    width: auto;
-    max-width: 100%;
+    min-width: 0;
     align-items: flex-start;
     justify-content: flex-start;
-    flex-basis: 50%;
-    flex-shrink: 1;
-    flex-grow: 1;
+    flex: 1 1 50%;
     margin: 0;
 }
 
 .steps__img {
     display: flex;
-    width: 600px;
+    max-width: 100%;
     height: auto;
     align-items: flex-start;
     justify-content: flex-start;
@@ -621,8 +628,8 @@ STEPS ↓
 }
 
 .steps__description {
-    flex-basis: 50%;
-    flex-shrink: 0;
+    flex: 1 1 50%;
+    width: auto;
 }
 
 .steps__section--tag {
@@ -687,9 +694,11 @@ VALUES ↓
     margin: 0;
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 80px;
+    padding: 0px 0px 80px;
+    box-sizing: border-box;
 }
 
 .row__values {
@@ -1079,12 +1088,13 @@ TESTIMONIALS ↓
 .container__testimonials {
     display: flex;
     flex-direction: column;
-    margin: 0;
     width: 100%;
     max-width: 1200px;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-bottom: 80px;
+    margin: 0 auto;
+    padding: 0px 0px 80px;
+    box-sizing: border-box;
 }
 
 .row__testimonials {
@@ -1201,16 +1211,18 @@ START / CALL TO ACTION ↓
 */
 
 .container__start {
+    display:block;
+    width: 100%;
+    max-width: 1200px;
     position: relative;
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 100px 50px;
     background-color: rgb(100, 21, 255);
     overflow: hidden;
+    margin: 200px auto;
     margin-top: 200px;
     margin-bottom: 200px;
+    box-sizing: border-box;
 }
 
 .start__blob--1, .start__blob--2 {
@@ -1307,13 +1319,25 @@ FOOTER ↓
 
 */
 
-
 footer {
-    padding: 50px 10px;
-    background-color: rgb(100, 21, 255);
+    display: block;
+    max-width: 1200px
+    padding: 50px 0;
     position: relative;
-    overflow: hidden;
     margin-bottom: -32px;
+    box-sizing: border-box;
+}
+
+.footer__container {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 32px;
+    background-color: rgb(100, 21, 255);
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .row.footer__row {
@@ -1627,12 +1651,13 @@ MOBILE RESPONSIVENESS ↓
     .plan__price { font-size: 36px; }
     .plan__bottom { padding: 32px 48px; }
     .plans .plan { width: auto; flex: 1; }
+    .testimonials__description { padding-left:0; }
     .testimonial__para { margin-bottom: 32px; }
     .testimonial__bottom { flex-direction: column; align-items: center; padding-top: 4px; }
     .testimonial__profile { flex-direction: column; align-items: center; }
     .testimonial__details { margin-left: 0px; margin-top: 8px; }
     .testimonial__img { height: 64px; width: 64px; }
-    .testimonial__buttons { margin-top: 32px; }
+    .testimonial__buttons { margin-top: 32px; padding-left: 0; }
     .start__title { font-size: 24px; }
     .start__container { padding: 80px 0px; }
     .start__buttons { flex-direction: column; }
