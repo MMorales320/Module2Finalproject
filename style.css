@@ -1539,7 +1539,7 @@ MOBILE RESPONSIVENESS ↓
     .header__customers { padding-right: 64px; }
     .steps__description { display: block; width: auto; flex-basis: 50%; flex-grow: 1; flex-shrink: 1; max-width: 100%; height: auto; }
     .steps__img--wrapper { flex-basis: 48%; flex-grow: 1; flex-shrink: 1; width: auto; max-width: 100%; height: auto; display: flex; justify-content: center; align-items: center; }
-    .row__steps { display: flex; flex-direction: row; flex-wrap: wrap; width: 100%; max-width: 1200px; justify-content: space-between; gap: 40px; }
+    .row__steps { display: flex; flex-direction: column; flex-wrap: wrap; width: 100%; max-width: 1200px; justify-content: space-between; gap: 40px; }
     .steps__img--wrapper img { max-width: 100%; height: auto; display: block; object-fit: contain; }
     .plan__bottom { padding: 32px 64px; }
     .testimonials__img { width: 41.6667%; }
