@@ -1563,10 +1563,10 @@ MOBILE RESPONSIVENESS ↓
     .feature__para { max-width: none; }
     .section__para { font-size: 1rem; }
     .section__title { font-size: 2.25rem; }
-    .row__steps { display: flex; flex-direction: column; flex-wrap: wrap; max-width: 100%; height: auto; align-items: center; }
+    .row__steps { display: flex; flex-direction: row; flex-wrap: wrap; max-width: 100%; height: auto; align-items: center; gap: 20px; }
     .step__description { text-align: left; }
-    .steps__description { width: 100%; height: auto; flex-basis: auto; flex-grow: 0; flex-shrink: 0; margin-top: 20px; padding: 0 10px; text-align: center; }
-    .steps__img--wrapper { width: 100%; height: auto; flex-basis: auto; flex-grow: 0; flex-shrink: 0; }
+    .steps__description { height: auto; flex-basis: 48%; flex-grow: 1; flex-shrink: 0; margin-top: 20px; padding: 0 10px; text-align: center; }
+    .steps__img--wrapper { height: auto; flex-basis: 48%; flex-grow: 1; flex-shrink: 0; }
     .steps__img--wrapper img { display: block; max-width: 100%; height: auto; object-fit: contain; margin: 0 auto; }
     .container__steps { width: 100%; max-width: 100%; height: auto; padding: 40px 10px; margin: 0 auto; }
     .quality__description { padding-right: 48px; }
